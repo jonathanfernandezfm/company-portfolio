@@ -1,0 +1,29 @@
+---
+import Hero from '../components/Hero.astro';
+import Companies from '../components/Companies.astro';
+import Layout from '../layouts/Layout.astro';
+import Stats from '../components/Stats.astro';
+import SectionCompanies from '../components/SectionCompanies.astro';
+import ReviewWideCard from '../components/ReviewWideCard.astro';
+---
+
+<Layout title='Company Portfolio'>
+	<main>
+		<Hero />
+		<Companies />
+		<Stats />
+		<SectionCompanies />
+		<ReviewWideCard />
+	</main>
+</Layout>
+
+<style is:global>
+	.blurred-shape {
+		width: 600px;
+		height: 600px;
+		border-radius: 50%;
+		filter: blur(150px);
+		pointer-events: none;
+		z-index: -1;
+	}
+</style>
